@@ -9,7 +9,7 @@ async function carregar_dados(debug_ : boolean): Promise<Array<object>> {
         throw new Error("Erro na requisição.");
     }
 
-    const dados = response.json();
+    response.json();
     
     if(debug_) {
         console.log(dados);
@@ -18,7 +18,7 @@ async function carregar_dados(debug_ : boolean): Promise<Array<object>> {
 }
 
 function init() : void {
-    carregar_dados();
+    carregar_dados(true);
 }
 
 init();
