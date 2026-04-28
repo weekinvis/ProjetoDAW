@@ -2,7 +2,7 @@ const url : string = "https://proxy.corsfix.com/?https://temporeal.pbh.gov.br/?p
 
 let dados : Promise<Array<object>>;
 
-async function carregar_dados(): Promise<Array<object>> {
+async function carregar_dados(debug_ : boolean): Promise<Array<object>> {
     const response = await fetch(url);
 
     if(!response.ok) {
@@ -10,7 +10,10 @@ async function carregar_dados(): Promise<Array<object>> {
     }
 
     const dados = response.json();
-    console.log(dados);
+    
+    if(debug_) {
+        console.log(dados);
+    }
     return dados;
 }
 
