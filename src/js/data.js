@@ -6,14 +6,13 @@ async function carregar_dados(debug_) {
     if (!response.ok) {
         throw new Error("Erro na requisição.");
     }
-    const dados = response.json();
     if (debug_) {
         console.log(dados);
     }
-    return dados;
+    return await response.json();
 }
 function init() {
-    carregar_dados(true);
+    dados = carregar_dados(true);
+    console.log(dados);
 }
 init();
-
