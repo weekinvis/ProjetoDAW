@@ -21,7 +21,6 @@ async function carregar_dados(debug_: boolean): Promise<Array<object>> {
 
 async function init(): Promise<void> {
     dados = await carregar_dados(true);
-    console.log(dados);
 }
 
 init();
