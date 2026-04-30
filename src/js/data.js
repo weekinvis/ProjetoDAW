@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const url = "https://proxy.corsfix.com/?https://temporeal.pbh.gov.br/?param=D";
 let dados;
 async function carregar_dados(debug_) {
@@ -7,13 +6,14 @@ async function carregar_dados(debug_) {
     if (!response.ok) {
         throw new Error("Erro na requisição.");
     }
+    const json = await response.json();
     if (debug_) {
-        console.log(dados);
+        console.log(json);
     }
-    return await response.json();
+    return json;
 }
-function init() {
-    dados = carregar_dados(true);
+async function init() {
+    dados = await carregar_dados(true);
     console.log(dados);
 }
 init();
