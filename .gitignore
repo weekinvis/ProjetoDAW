@@ -1,5 +1,5 @@
 src/node_modules/
 
-**.d.ts
+*.d.ts
 
-**.map
+*.map
