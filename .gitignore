@@ -1,6 +1,6 @@
 src/node_modules/
+node_modules/
 
-*.json
+src/package-lock.json
 *.d.ts
-
 *.map
