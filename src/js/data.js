@@ -17,4 +17,3 @@ function init() {
     console.log(dados);
 }
 init();
-//# sourceMappingURL=data.js.map
