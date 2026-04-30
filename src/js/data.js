@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const url = "https://proxy.corsfix.com/?https://temporeal.pbh.gov.br/?param=D";
 let dados;
 async function carregar_dados(debug_) {
@@ -16,3 +17,4 @@ function init() {
     console.log(dados);
 }
 init();
+//# sourceMappingURL=data.js.map

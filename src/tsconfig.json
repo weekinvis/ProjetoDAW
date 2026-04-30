@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./js",
+    "rootDir": "./ts",
+    "module": "nodenext",
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "types": ["node"],
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "strict": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  }
+}

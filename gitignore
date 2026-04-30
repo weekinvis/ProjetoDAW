@@ -1,0 +1,4 @@
+*.d.ts;
+*.map;
+*.json;
+node_modules/;

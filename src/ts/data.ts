@@ -12,11 +12,11 @@ async function carregar_dados(debug_ : boolean): Promise<Array<object>> {
     if(debug_) {
         console.log(dados);
     }
-    return await response.json();
+    return await response.json() as Array<Object>;
 }
 
 function init() : void {
-    dados = await carregar_dados(true);
+    dados = carregar_dados(true);
     console.log(dados);
 }
 
