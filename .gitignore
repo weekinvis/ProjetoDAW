@@ -1,4 +1,4 @@
-*.d.ts;
-*.map;
-*.json;
-node_modules/;
+**.d.ts;
+**.map;
+**.json;
+src/node_modules/;
