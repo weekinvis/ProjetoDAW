@@ -14,6 +14,5 @@ async function carregar_dados(debug_) {
 }
 async function init() {
     dados = await carregar_dados(true);
-    console.log(dados);
 }
 init();
