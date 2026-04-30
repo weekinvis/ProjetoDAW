@@ -1,5 +1,6 @@
 src/node_modules/
 
+*.json
 *.d.ts
 
 *.map
