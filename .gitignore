@@ -1,2 +1,4 @@
-package.json;
-tsconfig.json;
+*.d.ts;
+*.map;
+*.json;
+node_modules/;
